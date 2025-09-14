@@ -23,7 +23,7 @@ const orderSchema = new mongoose.Schema({
     },
     paymentMethod: { type: String, required: true, default: 'cash' },
     totalAmount: { type: Number, required: true },
-    status: { type: String, default: 'Pending' }, // Pending, Confirmed, Shipped, Delivered, Cancelled
+    status: { type: String, default: 'pending' }, // Pending, Confirmed, Shipped, Delivered, Cancelled
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now }
 });
